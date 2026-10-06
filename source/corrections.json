@@ -1,0 +1,18 @@
+[
+  {
+    "annotation_id": 31,
+    "file_name": "ICPD-000003.jpg",
+    "field": "attributes",
+    "from": {"status": "healthy", "severity": "0"},
+    "to": {"status": "symptomatic", "severity": "1"},
+    "reason": "Main stem (node down to bottom edge) carries the dark marks; status was swapped with the branch polygon during annotation."
+  },
+  {
+    "annotation_id": 35,
+    "file_name": "ICPD-000003.jpg",
+    "field": "attributes",
+    "from": {"status": "symptomatic", "severity": "1"},
+    "to": {"status": "healthy", "severity": "0"},
+    "reason": "Up-right branch shows no symptoms; status was swapped with the main stem polygon during annotation."
+  }
+]

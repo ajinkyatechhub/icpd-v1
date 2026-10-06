@@ -1,0 +1,715 @@
+[
+ {
+  "name": "leaf",
+  "type": "polygon",
+  "attributes": [
+   {
+    "name": "visibility",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "full",
+    "values": [
+     "full",
+     "partial",
+     "cut_by_frame"
+    ]
+   },
+   {
+    "name": "status",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "symptomatic",
+    "values": [
+     "symptomatic",
+     "healthy",
+     "dead"
+    ]
+   },
+   {
+    "name": "severity",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "0",
+    "values": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "boll",
+  "type": "polygon",
+  "attributes": [
+   {
+    "name": "visibility",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "full",
+    "values": [
+     "full",
+     "partial",
+     "cut_by_frame"
+    ]
+   },
+   {
+    "name": "status",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "symptomatic",
+    "values": [
+     "symptomatic",
+     "healthy",
+     "dead"
+    ]
+   },
+   {
+    "name": "severity",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "0",
+    "values": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "shoot_stem",
+  "type": "polygon",
+  "attributes": [
+   {
+    "name": "visibility",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "full",
+    "values": [
+     "full",
+     "partial",
+     "cut_by_frame"
+    ]
+   },
+   {
+    "name": "status",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "symptomatic",
+    "values": [
+     "symptomatic",
+     "healthy",
+     "dead"
+    ]
+   },
+   {
+    "name": "severity",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "0",
+    "values": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "whole_plant",
+  "type": "polygon",
+  "attributes": [
+   {
+    "name": "visibility",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "full",
+    "values": [
+     "full",
+     "partial",
+     "cut_by_frame"
+    ]
+   },
+   {
+    "name": "status",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "symptomatic",
+    "values": [
+     "symptomatic",
+     "healthy",
+     "dead"
+    ]
+   },
+   {
+    "name": "severity",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "0",
+    "values": [
+     "0",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "leaf_curl_virus",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "shoot_borer_damage",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "wilted_shoot",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "insect_visible",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "powdery_mildew",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "downy_mildew",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "leaf_miner_mine",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "leaf_miner_blotch",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "boll_rot_lesion",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "leaf_reddening_necrosis",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "early_blight",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "late_blight",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "leaf_spot",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "vascular_wilt",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "mechanical_damage",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "unknown_symptom",
+  "type": "any",
+  "attributes": [
+   {
+    "name": "instance_type",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "single",
+    "values": [
+     "single",
+     "cluster"
+    ]
+   },
+   {
+    "name": "confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "unsure"
+    ]
+   }
+  ]
+ },
+ {
+  "name": "image_info",
+  "type": "tag",
+  "attributes": [
+   {
+    "name": "crop",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "chilli",
+    "values": [
+     "chilli",
+     "brinjal",
+     "ridge_gourd",
+     "cotton",
+     "tomato",
+     "other"
+    ]
+   },
+   {
+    "name": "quality",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "good",
+    "values": [
+     "good",
+     "slightly_blurred",
+     "reject"
+    ]
+   },
+   {
+    "name": "view",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "leaf_close_up",
+    "values": [
+     "leaf_close_up",
+     "stem_close_up",
+     "boll_fruit",
+     "whole_plant"
+    ]
+   },
+   {
+    "name": "overall_health",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "mild",
+    "values": [
+     "mild",
+     "moderate",
+     "severe",
+     "healthy"
+    ]
+   },
+   {
+    "name": "disease_reported",
+    "input_type": "text",
+    "mutable": false,
+    "default_value": "",
+    "values": [
+     ""
+    ]
+   },
+   {
+    "name": "pests_reported",
+    "input_type": "text",
+    "mutable": false,
+    "default_value": "",
+    "values": [
+     ""
+    ]
+   },
+   {
+    "name": "pest_evidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "field_observed_only",
+    "values": [
+     "field_observed_only",
+     "visible_in_photo",
+     "none"
+    ]
+   },
+   {
+    "name": "label_confidence",
+    "input_type": "select",
+    "mutable": false,
+    "default_value": "probable",
+    "values": [
+     "probable",
+     "confident",
+     "needs_expert"
+    ]
+   },
+   {
+    "name": "duplicate_group",
+    "input_type": "text",
+    "mutable": false,
+    "default_value": "",
+    "values": [
+     ""
+    ]
+   },
+   {
+    "name": "notes",
+    "input_type": "text",
+    "mutable": false,
+    "default_value": "",
+    "values": [
+     ""
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,26 @@
+# Ultralytics-style dataset file. Paths are relative to this folder.
+path: ../..
+train: images
+val: images
+nc: 20
+names:
+  0: leaf
+  1: boll
+  2: shoot_stem
+  3: whole_plant
+  4: leaf_curl_virus
+  5: shoot_borer_damage
+  6: wilted_shoot
+  7: insect_visible
+  8: powdery_mildew
+  9: downy_mildew
+  10: leaf_miner_mine
+  11: leaf_miner_blotch
+  12: boll_rot_lesion
+  13: leaf_reddening_necrosis
+  14: early_blight
+  15: late_blight
+  16: leaf_spot
+  17: vascular_wilt
+  18: mechanical_damage
+  19: unknown_symptom
