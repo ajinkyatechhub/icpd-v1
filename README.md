@@ -1,4 +1,4 @@
-# ICPD v1: Indian Crop Pest & Disease field images (batch 02)
+# ICPD v1: Indian Crop Pest & Disease field images (v1.2.0, complete)
 
 Field photographs of Indian vegetable crops with polygon annotations of plant parts,
 disease symptoms and pest damage, plus image-level diagnosis metadata.
@@ -6,9 +6,9 @@ Built by Ajinkya Tech from its own field photos. No internet images.
 
 | | |
 |---|---|
-| Version | 1.1.0-batch02 (2026-10-07) |
-| Images | 10 annotated (1 chilli, 4 brinjal, 3 ridge gourd, 2 cotton); 2 tomato images pending annotation |
-| Annotations | 89 polygons across 14 classes in use (20 defined); 23 are cluster regions (iscrowd = 1) |
+| Version | 1.2.0 (2026-10-07) |
+| Images | 12 annotated (1 chilli, 4 brinjal, 3 ridge gourd, 2 cotton, 2 tomato) |
+| Annotations | 104 polygons across 16 classes in use (20 defined); 26 are cluster regions (iscrowd = 1) |
 | Formats | COCO instance segmentation, YOLO segmentation |
 | Annotation tool | CVAT (app.cvat.ai), manual polygons |
 | Licence | Proprietary, all rights reserved. See [LICENSE.md](LICENSE.md) |
@@ -42,7 +42,6 @@ icpd-v1/
 │   ├── images/                   EXIF-stripped originals
 │   ├── image_info.csv            image-level labels (CVAT image_info tag)
 │   └── corrections.json          machine-readable corrections
-├── pending/manifest.csv          captured images not yet annotated (2 tomato), with field notes
 └── scripts/
     ├── build_release.py          source/  ->  data/   (fully reproducible)
     └── validate.py               integrity and schema checks
@@ -63,30 +62,32 @@ Full definitions: [schema/taxonomy.md](schema/taxonomy.md).
 - **Reported vs visible are kept separate.** `disease_reported` / `pests_reported` record what the field team saw on the plant. Polygons record only what is visible in the photo. For example, leaf miner was reported on the brinjal plants but no mines are visible in these photos, so none are drawn and `notes` says so.
 - **Uncertainty is labelled, not hidden.** Virus diagnoses are `probable` (no lab test). Unidentified insects are `insect_visible` + `unsure`. Unexplained marks are `unknown_symptom`.
 - **Complete annotation per image.** Every in-focus, non-tiny symptomatic leaf or stem is outlined. Deliberate omissions (blurred background, hands, flowers, healthy leaves in stem close-ups) are listed in each image's notes.
-- **Leakage-free splits.** Images are grouped by plant or plot (`group_id`) and by near-duplicate (`duplicate_group`). A group must never be split across train and test. With only 4 groups, splits are `unassigned` in this batch.
+- **Leakage-free splits.** Images are grouped by plant or plot (`group_id`) and by near-duplicate (`duplicate_group`). A group must never be split across train and test. With only 5 groups, splits are `unassigned` in this batch.
 - **No pesticide advice in this release.** Any future advisory content will use doses only from the CIB&RC registered label for that crop and pest.
 
-## Class counts (batch 02)
+## Class counts (v1.2.0)
 
 | Class | Polygons | Images |
 |---|---|---|
-| leaf | 23 | 5 |
+| leaf | 29 | 6 |
 | leaf_curl_virus | 13 | 1 |
 | powdery_mildew | 10 | 2 |
 | leaf_miner_mine | 8 | 2 |
+| shoot_stem | 7 | 5 |
 | downy_mildew | 7 | 1 |
-| shoot_stem | 6 | 4 |
 | shoot_borer_damage | 6 | 3 |
+| unknown_symptom | 5 | 2 |
 | leaf_reddening_necrosis | 4 | 1 |
 | insect_visible | 3 | 2 |
 | boll | 3 | 2 |
+| vascular_wilt | 3 | 1 |
 | wilted_shoot | 2 | 2 |
 | boll_rot_lesion | 2 | 2 |
-| unknown_symptom | 1 | 1 |
 | mechanical_damage | 1 | 1 |
-| **Total** | **89** | **10** |
+| whole_plant | 1 | 1 |
+| **Total** | **104** | **12** |
 
-Images by crop and group: chilli 1 (G01), brinjal 4 (G02), ridge gourd 3 (G03; ICPD-000006 and ICPD-000008 are the same leaf, duplicate_group RG-LEAF-01), cotton 2 (G04).
+Images by crop and group: chilli 1 (G01), brinjal 4 (G02), ridge gourd 3 (G03; ICPD-000006 and ICPD-000008 are the same leaf, duplicate_group RG-LEAF-01), cotton 2 (G04), tomato 2 (G05).
 
 ## Quick start
 
@@ -111,7 +112,7 @@ python3 scripts/validate.py
 
 ## Known limitations
 
-See [docs/qa_report.md](docs/qa_report.md). In short: this is a small batch (10 images, 4 crops). Diagnoses are visual, not lab-confirmed. Insect species are not identified. Single annotator, and an independent second review is still pending.
+See [docs/qa_report.md](docs/qa_report.md). In short: this is a small set (12 images, 5 crops). Diagnoses are visual, not lab-confirmed. Insect species are not identified. Single annotator, and an independent second review is still pending.
 
 ## Contact
 

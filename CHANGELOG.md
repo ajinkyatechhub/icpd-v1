@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0 (2026-10-07)
+
+- Added the last 2 images, both tomato: ICPD-000011 (dry papery leaflet patches, blight vs Tuta absoluta look-alike, labelled unknown_symptom + needs_expert) and ICPD-000012 (whole-plant vascular wilt, Fusarium vs bacterial unconfirmed). 15 new polygons, 104 in total.
+- All 12 captured images are now annotated; pending/ removed. New group G05-TOMATO.
+
 ## 1.1.0-batch02 (2026-10-07)
 
 - Added 5 annotated images: ICPD-000006 to 000008 (ridge gourd: powdery mildew, downy mildew, leaf miner trails) and ICPD-000009 to 000010 (cotton: boll rot, leaf reddening/necrosis). 45 new polygons, 89 in total.

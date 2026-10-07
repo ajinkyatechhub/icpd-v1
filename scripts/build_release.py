@@ -34,7 +34,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "source")
 OUT = os.path.join(ROOT, "data")
 
-VERSION = "1.1.0-batch02"
+VERSION = "1.2.0"
 RELEASE_DATE = "2026-10-07"
 
 PART_LABELS = {"leaf", "boll", "shoot_stem", "whole_plant"}
